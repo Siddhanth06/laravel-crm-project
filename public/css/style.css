@@ -188,3 +188,43 @@ html {
     margin-top: 4rem;
     padding: 2rem;
 }
+
+/*view lead*/
+.info {
+    display: grid !important;
+    /* flex-direction: row !important; */
+    grid-template-columns: 1fr 2fr !important;
+    /* column-gap: 5rem; */
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.bold {
+    font-weight: bold;
+    color: #353434;
+}
+
+.h1 {
+    padding: 0 2rem;
+}
+.a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+/*Convert Lead*/
+.convert-container {
+    row-gap: 3rem;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+.grey {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(77, 75, 75);
+}
+
+.space {
+    padding: 0 2rem;
+}

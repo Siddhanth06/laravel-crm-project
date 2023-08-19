@@ -17,7 +17,12 @@
           <tbody>
             @foreach ($leads as $lead)
             <tr>
-                <td>{{$lead['first_name']}}</td>
+                
+                <td>
+                    <a href="{{route('view_lead',['id'=>$lead['id']])}}">
+                        {{$lead['first_name']}}
+                    </a>
+                </td>
                 <td>{{$lead['company']}}</td>
                 <td>{{$lead['email']}}</td>
                 <td>{{$lead['phone']}}</td>

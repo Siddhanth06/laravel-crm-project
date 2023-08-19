@@ -116,4 +116,27 @@ class AdminController extends Controller
             return redirect('/leads/manage_leads');
         }
     }
+
+    public function viewLead($id)
+    {
+        $lead = LeadModel::find($id);
+        return view('view_lead', ['lead' => $lead]);
+    }
+
+
+    public function convertLead($id)
+    {
+        $lead = LeadModel::find($id);
+        return view('convert_lead', ['lead' => $lead]);
+    }
+
+    public function convertLeadForm(Request $request)
+    {
+        dd($request->all());
+        $request->validate([
+            'deal_name' => ['required'],
+            'closing_date' => ['required'],
+            'stage' => ['required'],
+        ]);
+    }
 }

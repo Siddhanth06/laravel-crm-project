@@ -57,3 +57,12 @@ Route::get('leads/edit_lead/{id}', [AdminController::class, 'editLead'])->name('
 
 //Route for update lead
 Route::post('leads/update_lead/{id}', [AdminController::class, 'updateLead'])->name('update_lead')->middleware('auth');
+
+
+//Route to view individual lead
+Route::get('leads/view_lead/{id}', [AdminController::class, 'viewLead'])->name('view_lead')->middleware('auth');
+
+//Route to convert lead
+Route::get('leads/convert_lead/{id}', [AdminController::class, 'convertLead'])->name('convert_lead')->middleware('auth');
+
+Route::post('leads/convert_lead/{id}', [AdminController::class, 'convertLeadForm'])->name('convert_lead')->middleware('auth');
