@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+/*Sidebar Styling*/
+
+.sidebar {
+    width: 25rem;
+    height: 100vh;
+    background-color: #1b1a1b;
+    position: fixed;
+    top: 5.3rem;
+}
+
+.sidebar header {
+    background-color: gray;
+    padding: 1rem;
+}
+
+.sidebar header img {
+    width: 10rem;
+    border-radius: 50%;
+    margin: 2rem 0;
+    margin-left: 6.5rem;
+}
+
+.sidebar header h3 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.menu-items {
+    padding: 2rem;
+}
+
+.item {
+    line-height: 4rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.item a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.fa-solid {
+    margin-right: 1rem;
+}
+
+.fa-arrow-right {
+    position: absolute;
+    right: 8px;
+    margin: 12px;
+}
+
+.flip {
+    transform: rotate(90deg);
+}
+
+.sub-menu {
+    padding-left: 5rem;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+/*Main Content*/
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 25rem;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.totals {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.total {
+    padding: 2rem 8rem;
+    color: white;
+}
+
+.lead-table {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 2rem;
+    align-items: center;
+    margin: 0 !important;
+}
+
+.btn {
+    padding: 0.5rem 1rem !important;
+    font-size: 1.5rem !important;
+    border-radius: 1rem !important;
+}
+
+.main-lead-table {
+    box-shadow: -1px 0px 4px 0px black;
+}
+
+.table {
+    margin: 0 !important;
+    font-size: 1.4rem;
+}
+
+/*Login Form*/
+.form-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    font-size: 2rem;
+    box-shadow: -4px 6px 12px -10px black;
+    padding: 4rem;
+}
+
+.form-input {
+    padding: 0.5rem 1rem !important;
+    font-size: 2rem !important;
+}
+
+/*Add Lead*/
+.add-lead-container {
+    margin-left: 25rem;
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+.form-group {
+    margin: 2rem 0;
+}
+
+.form-group label {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.form-control {
+    margin-top: 0.7rem;
+    padding: 1rem !important;
+}
+
+.lead-card {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    z-index: 9999;
+}
+
+.lead-status {
+    font-size: 1.7rem !important;
+    margin-top: 0.8rem !important;
+}
+
+/*Manage Leads */
+
+.manage-lead-container {
+    margin-left: 25rem;
+    margin-top: 4rem;
+    padding: 2rem;
+}
