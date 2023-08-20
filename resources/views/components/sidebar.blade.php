@@ -25,23 +25,33 @@
     <div class="item">
         <a href="">
             <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-            Dashboard
+             Deals <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
         </a>
+        <div class="sub-menu">
+            {{-- <div><a href="{{route('add_lead')}}">Add Lead</a></div> --}}
+            <div><a href="{{route('manage_deals')}}">Manage deals</a></div>
+        </div>
     </div>
     <div class="item">
         <a href="">
             <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-            Dashboard
+             Contacts <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
         </a>
+        <div class="sub-menu">
+            {{-- <div><a href="{{route('add_lead')}}">Add Lead</a></div> --}}
+            <div><a href="{{route('manage_contacts')}}">Manage Contacts</a></div>
+        </div>
     </div>
     <div class="item">
         <a href="">
             <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-            Dashboard
+             Accounts <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
         </a>
+        <div class="sub-menu">
+            <div><a href="{{route('add_account')}}">Add Account</a></div>
+            <div><a href="{{route('manage_accounts')}}">Manage Accounts</a></div>
+        </div>
     </div>
-    
-
 </div>
 </div>
 

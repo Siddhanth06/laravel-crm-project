@@ -65,4 +65,15 @@ Route::get('leads/view_lead/{id}', [AdminController::class, 'viewLead'])->name('
 //Route to convert lead
 Route::get('leads/convert_lead/{id}', [AdminController::class, 'convertLead'])->name('convert_lead')->middleware('auth');
 
+
 Route::post('leads/convert_lead/{id}', [AdminController::class, 'convertLeadForm'])->name('convert_lead')->middleware('auth');
+
+
+Route::get('/accounts/manage_accounts', [AdminController::class, 'manageAccounts'])->name('manage_accounts')->middleware('auth');
+Route::get('/accounts/add_account', [AdminController::class, 'addAccount'])->name('add_account')->middleware('auth');
+Route::post('/accounts/add_account', [AdminController::class, 'addAccountData'])->name('add_account')->middleware('auth');
+Route::get('/accounts/edit_account/{id}', [AdminController::class, 'editAccount'])->name('edit_account')->middleware('auth');
+Route::post('/accounts/edit_account/{id}', [AdminController::class, 'updateAccount'])->name('update_account')->middleware('auth');
+Route::get('/accounts/delete_account/{id}', [AdminController::class, 'deleteAccount'])->name('delete_account')->middleware('auth');
+Route::get('/contacts/manage_contacts', [AdminController::class, 'manageContacts'])->name('manage_contacts')->middleware('auth');
+Route::get('/contacts/manage_deals', [AdminController::class, 'manageDeals'])->name('manage_deals')->middleware('auth');

@@ -42,8 +42,8 @@
                                     <input type="text" name="deal_name" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
                                 </div>
                                 @error('deal_name')
-              <p class="text-danger">{{$message}}</p>
-          @enderror
+                                <p class="text-danger">{{$message}}</p>
+                                @enderror
                             </td>
                         </tr>
                         <tr>
@@ -58,8 +58,8 @@
                                 <div class="col-auto">
                                     <input type="date" name="closing_date" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
                                     @error('closing_date')
-              <p class="text-danger">{{$message}}</p>
-          @enderror
+                                    <p class="text-danger">{{$message}}</p>
+                                    @enderror
                                 </div>
                             </td>
                         </tr>
@@ -81,8 +81,8 @@
                                 @endforeach
                                 </select>
                                 @error('stage')
-              <p class="text-danger">{{$message}}</p>
-          @enderror
+                                <p class="text-danger">{{$message}}</p>
+                                @enderror
                             </td>
                         </tr>
                     </tbody>
